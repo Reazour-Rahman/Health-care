@@ -1,0 +1,13 @@
+.display{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+div h1{
+    font-weight: bold;
+}
+p:hover{
+    margin-left: 20px;
+}
+.cursor{
+    cursor: pointer;
+}
