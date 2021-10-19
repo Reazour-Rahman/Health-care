@@ -2,8 +2,8 @@
 
 ## Live demo : 
 
-* * * It is Hospital based web application about Mental Health
-* * * This is a react js based website.
-* * * This website has strong Log in system.
-* * * This website's data is highly secured by Firebase , so no worry for ur data.
-* * * It is made with react router, no reload , therefore performance is sup* * *
+* * * __It is Hospital based web application about Mental Health__
+* * * __This is a react js based website__
+* * * __This website has strong Log in system.__
+* * * __This website's data is highly secured by Firebase , so no worry for ur data.__
+* * * __It is made with react router, no reload , therefore performance is super__
