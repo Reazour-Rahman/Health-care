@@ -16,6 +16,7 @@ import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import NoResult from './pages/Home/NoResult/NoResult';
 import About from './pages/Home/About/About';
 import Contact from './pages/Home/Contact/Contact';
+import Branches from './pages/Branches/Branches';
 
 function App() {
   return (
@@ -41,9 +42,9 @@ function App() {
               <About></About>
             </Route>
 
-            <Route  path="/contact">
+            <PrivateRoute  path="/contact">
               <Contact></Contact>
-            </Route>
+            </PrivateRoute>
 
             <Route path="/login">
               <Login></Login>
@@ -53,6 +54,10 @@ function App() {
               <Register></Register>
             </Route>
 
+            <PrivateRoute path="/branches">
+              <Branches></Branches>
+            </PrivateRoute>
+            
             <PrivateRoute path="/details/:serviceId">
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>

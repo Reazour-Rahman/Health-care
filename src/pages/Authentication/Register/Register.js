@@ -60,7 +60,7 @@ const Register = () => {
   
       setOpen(false);
     };
-  
+  /* modal */
     const action = (
       <React.Fragment>
         <Button color="secondary" size="small" onClick={handleClose}>
@@ -93,15 +93,15 @@ const Register = () => {
                 <h2>Sign Up</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="user-box">
-                    <input onBlur={handleNameChange} type="text" name="" required=""/>
+                    <input required onBlur={handleNameChange} type="text" name=""/>
                     <label>Username</label>
                     </div>
                     <div className="user-box">
-                    <input onBlur={handleEmailChange} type="text" name="" required=""/>
+                    <input required onBlur={handleEmailChange} type="text" name=""/>
                     <label>Email</label>
                     </div>
                     <div className="user-box">
-                    <input onBlur={handlePasswordChange} type="password" name="" required=""/>
+                    <input required onBlur={handlePasswordChange} type="password" name=""/>
                     <label>Password</label>
                     </div>
                     <a onClick={handleRegister} href="#">
@@ -115,7 +115,7 @@ const Register = () => {
                 </form>
                 <div className="mt-2">
                 <button style={{width:"150px"}} className="btn btn-dark me-2" onClick={googleSignIn} type="submit"><i className="fab fa-google"></i></button>
-                <button style={{width:"150px"}} className="btn btn-dark ms-2" onClick={googleSignIn} type="submit"><i className="fab fa-twitter"></i></button>
+                
                 </div>
                 {/* toggle */}
                 <div className="text-center mt-3"><Link to="/login">Already have an account?</Link></div>
@@ -126,24 +126,3 @@ const Register = () => {
 };
 
 export default Register;
-
-
-/* 
-
-
-
-<Button onClick={handleClick}>Open simple snackbar</Button>
-      <Snackbar
-        open={open}
-        autoHideDuration={6000}
-        onClose={handleClose}
-        message="Note archived"
-        action={action}
-      />
-    </div>
-
-
-
-
-
-*/

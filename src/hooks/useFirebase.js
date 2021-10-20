@@ -38,7 +38,10 @@ const useFirebase = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 setUser(result.user)
-            })
+            }).catch((error) => {
+                setError(error)
+                // console.log(error.message);
+            });
     }
 
     /* update user  */
@@ -100,6 +103,7 @@ const useFirebase = () => {
        isLoading,
        setIsLoading,
        handleNameChange,
+       error
     }
 };
 

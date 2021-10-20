@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import logo from '../../../images/logo.png'
+import './Header.css'
 
 const Header = () => {
     /* get auth */
@@ -20,9 +21,14 @@ const Header = () => {
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   {/* navs */}  
                     <Link  to="/home" className="nav-link active text-white" aria-current="page"><Button className="rounded-0 text-white" variant="outlined">Home</Button></Link>
+
                     <Link to="/about" className="nav-link active text-white" aria-current="page"><Button className="rounded-0 text-white" variant="outlined">About</Button></Link>
+
                     <a className="nav-link active text-white" aria-current="page" href="#services"><Button className="rounded-0 text-white" variant="outlined">Services</Button></a>
-                    <Link to ="contact" className="nav-link active text-white" aria-current="page"><Button className="rounded-0 text-white" variant="outlined">Contact</Button></Link>
+
+                    <Link to ="/branches" className="nav-link active text-white" aria-current="page"><Button className="rounded-0 text-white" variant="outlined">Our Branches</Button></Link>
+
+                    <Link to ="/contact" className="nav-link active text-white" aria-current="page"><Button className="rounded-0 text-white" variant="outlined">Contact</Button></Link>
                     
                 {/* Log in and Register */}
                 </ul>
@@ -44,3 +50,15 @@ const Header = () => {
 };
 
 export default Header;
+
+/* 
+
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+
+*/
